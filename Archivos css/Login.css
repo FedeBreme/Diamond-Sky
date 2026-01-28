@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    scrollbar-color: #1cd8d2 #333;
+    background-image: url("./PAGE\ LOGIN.png");
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    font-family: Quicksand;
+}
+
+#error-message {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
+    background-color: transparent;
+    place-items: center;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 250px;
+    margin-left: 480px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 55px #1cd8d2;
+    border-radius: 15px;
+}
+  
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 3px #1cd8d2;
+}
+
+h4 {
+    text-align: center;
+}
+
+input {
+    margin-left: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+}
+
+.boton {
+    background-color: #333;
+    color: white;
+    padding: 7px;
+    width: 178px;
+}
+
+.botonn {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    background-color: black;
+    margin-left: 60px;
+}
+
+.botonn:hover {
+    color: #1cd8d2;
+    box-shadow: 0 0 10px #1cd8d2;
+    border-color: #1cd8d2;
+    padding: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.botonn:active {
+    color: white;
+    box-shadow: 0 0 10px #1cd8d2;
+    border-color: #1cd8d2;
+    padding: 12px;
+    transition: transform 0.5s ease-in-out;
+}

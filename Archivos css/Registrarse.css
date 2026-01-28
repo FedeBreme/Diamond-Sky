@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    scrollbar-color: #1cd8d2 #333;
+    background-image: url("./PAGE\ LOGIN.png");
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+    font-family: Quicksand;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: transparent;
+    place-items: center;
+    height: 300px;
+    width: 550px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 250px;
+    margin-left: 400px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 55px #1cd8d2;
+    border-radius: 15px;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    color: white;
+    margin: 20px;
+}
+  
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    color: white;
+    margin: 20px;
+}
+
+input {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+button {
+    width: 177px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}

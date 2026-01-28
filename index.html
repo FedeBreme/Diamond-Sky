@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Sky/Inicio</title>
+    <link rel="icon" type="image/png" href="https://e1.pngegg.com/pngimages/534/227/png-clipart-gemstones-white-diamond-illustration.png">
+    <link rel="stylesheet" href="./Archivos css/Index.css">
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="flex-items">
+                <img src="./Imagenes/3ccd54c3aad9424d868885046568e147.png">
+            </div>
+            <div class="flex-items">
+                <div class="menu">
+                    <ul class="ul">
+                        <li><a href="./index.html" >INICIO</a></li>
+                        <li class="dropdown">
+                            <a href="">PRODUCTOS</a>
+                            <div class="dropdown-content">
+                                <a href="./ProductosComponentesPC.html">COMPONENTES PC</a>
+                                <a href="./Perifericos.html">PERIFERICOS</a>
+                                <a href="./Monitores.html">MONITORES</a>
+                                <a href="./Computadoras.html">COMPUTADORAS</a>
+                                <a href="./Notebook.html">NOTEBOOK</a>
+                            </div>
+                        </li>
+                        <li><a href="./Sucursales.html" >SUCURSALES</a></li>
+                        <li><a href="./Contactos.html" >CONTACTOS</a></li>
+                        <li><a href="./Ayuda.html" >AYUDA</a></li>
+                    </ul>
+                </div>
+            </div>
+         </div>
+    </header>
+    <article>
+        <div id="carousel-container">
+            <div id="carousel">
+                <div class="slide"><a href="./QuienesSomos.html"><img class="img" src="./Imagenes/1.png" alt="Imagen 1"></div></a>
+                <div class="slide"><a><img class="img" src="./Imagenes/2.png" alt="Imagen 2"></div></a>
+                <div class="slide"><a><img class="img" src="./Imagenes/3.png" alt="Imagen 3"></div></a>
+                <div class="slide"><a><img class="img" src="./Imagenes/4.png" alt="Imagen 4"></div></a>
+            </div>
+        </div>
+    
+        <button class="carousel-btn" id="prev-btn" onclick="prevSlide()">❮</button>
+        <button class="carousel-btn" id="next-btn" onclick="nextSlide()">❯</button>
+    
+        <script>
+            let currentSlide = 0;
+    
+            function showSlide(index) {
+                const carousel = document.getElementById("carousel");
+                currentSlide = (index + carousel.childElementCount) % carousel.childElementCount;
+                carousel.style.transform = `translateX(${-currentSlide * 100}%)`;
+            }
+    
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+    
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+        </script>
+    </article>
+    <br>
+    <br>
+    <article>
+        <h1>NOVEDADES</h1>
+        <br>
+        <br>
+    </article>
+    <article class="cartas">
+        <div class="card uno">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://diamondsystemar.vtexassets.com/arquivos/ids/159260-1200-auto?v=638234645957830000&width=1200&height=auto&aspect=true">
+                </p>
+                <h2 class="card-title">
+                    Auriculares inalámbricos gamer HyperX Cloud Flight
+                </h2>
+                <p class="card-description">
+                    <span>$138.840</span> $115.640
+                </p>
+                <br>
+                <a class="boton" href="https://www.diamondcomputacion.com.ar/auriculares-inalambricos-gamer-cloud-flight/p" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+        <div class="card uno2">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://diamondsystemar.vtexassets.com/arquivos/ids/155949-1200-auto?v=638013505059170000&width=1200&height=auto&aspect=true">
+                </p>
+                <h2 class="card-title">
+                    Procesador AMD Ryzen 5 5600G
+                </h2>
+                <p class="card-description">
+                    <span>$219.714</span> $199.740
+                </p>
+                <br>
+                <a class="boton" href="https://www.diamondcomputacion.com.ar/procesador-amd-ryzen-5-5600g/p" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+        <div class="card uno3">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://diamondsystemar.vtexassets.com/arquivos/ids/157665-1200-auto?v=638150305067730000&width=1200&height=auto&aspect=true">
+                </p>
+                <h2 class="card-title">
+                    Memoria RAM PC Kingston 16GB DDR4 3200MHZ
+                </h2>
+                <p class="card-description">
+                    <span>$58.144</span> $50.560
+                </p>
+                <br>
+                <a class="boton" href="https://www.diamondcomputacion.com.ar/memoria-ram-pc-kingston-16gb-ddr4-3200mhz/p" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+    </article>
+    <br>
+    <br>
+    <article class="cartas">
+        <div class="card uno">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_13396_Monitor_Gamer_Samsung_24__G50_Curvo_144Hz_Full_HD_VA_FreeSync_4baf4931-grn.jpg">
+                </p>
+                <h2 class="card-title">
+                    Monitor Gamer Samsung 24" G50 Curvo 144Hz Full HD VA FreeSync
+                </h2>
+                <p class="card-description">
+                    <span>$377.860</span> $269.900
+                </p>
+                <br>
+                <a class="boton" href="https://compragamer.com/producto/Monitor_Gamer_Samsung_24_G50_Curvo_144Hz_Full_HD_VA_FreeSync_8543" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+        <div class="card uno4">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36812_Silla_Gamer_Corsair_T3_Rush_Fabric_Carbon__Peso_MAX._120kg__b76d4f96-grn.jpg">
+                </p>
+                <h2 class="card-title">
+                    Silla Gamer Corsair T3 Rush Fabric Carbon (Peso MAX. 120kg)
+                </h2>
+                <p class="card-description">
+                    <span>$584.870</span> $449.900
+                </p>
+                <br>
+                <a class="boton" href="https://compragamer.com/producto/Silla_Gamer_Corsair_T3_Rush_Fabric_Carbon_Peso_MAX_120kg__14658" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+        <div class="card uno4">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_33219_Cooler_CPU_Cooler_Master_ML360_ILLUSION_Water_Cooling_ARGB_c60c5c54-grn.jpg">
+                </p>
+                <h2 class="card-title">
+                    Cooler CPU Cooler Master ML360 ILLUSION Water Cooling ARGB
+                </h2>
+                <p class="card-description">
+                    <span>$287.385</span> $249.900
+                </p>
+                <br>
+                <a class="boton" href="https://compragamer.com/producto/Cooler_CPU_Cooler_Master_ML360_ILLUSION_Water_Cooling_ARGB_13736" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+    </article>
+    <br>
+    <br>
+    <article class="cartas">
+        <div class="card uno2">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://diamondsystemar.vtexassets.com/arquivos/ids/158269-1200-auto?v=638158033365600000&width=1200&height=auto&aspect=true">
+                </p>
+                <h2 class="card-title">
+                    Mouse gamer DS inugaki negro
+                </h2>
+                <p class="card-description">
+                    <span>$4.515</span> $4.300
+                </p>
+                <br>
+                <a class="boton" href="https://www.diamondcomputacion.com.ar/mouse-gamer-ds-inugaki-negro/p" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+        <div class="card uno3">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://diamondsystemar.vtexassets.com/arquivos/ids/159108-1200-auto?v=638179427008770000&width=1200&height=auto&aspect=true">
+                </p>
+                <h2 class="card-title">
+                    Gabinete Gamer Aerocool Mecha G-BK-V2
+                </h2>
+                <p class="card-description">
+                    <span>$87.924</span> $73.270
+                </p>
+                <br>
+                <a class="boton" href="https://www.diamondcomputacion.com.ar/gabinete-gamer-aerocool-mecha/p" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+        <div class="card uno">
+            <div class="card-content">
+                <p class="card-description">
+                    <img class="imagencard" src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38400_Notebook_Gamer_Lenovo_Legion_5_15ACH6H__WQHD_15.6__R5_5600H_16GB__2x8GB__512GB_NVME_RTX_3060_6GB_W11S_165Hz_2be15985-grn.jpg">
+                </p>
+                <h2 class="card-title">
+                    Notebook Gamer Lenovo Legion 5 15ACH6H WQHD 15.6"...
+                </h2>
+                <p class="card-description">
+                    <span>$1.403.999</span> $1.079.999
+                </p>
+                <br>
+                <a class="boton" href="https://compragamer.com/producto/Notebook_Gamer_Lenovo_Legion_5_15ACH6H_WQHD_15_6_R5_5600H_16GB_2x8GB_512GB_NVME_RTX_3060_6GB_W11S_165Hz_15062" target="_blank">Ver Producto</a>
+            </div>
+        </div>
+    </article>
+    <br>
+    <br>
+    <footer>
+        <h1>Seguinos en</h1>
+        <br>
+        <p><a href="./index.html">Twitter(X)</a> | <a href="./index.html">YouTube</a> | <a href="./index.html">Facebook</a> | <a href="./index.html">LinkedIn</a> | <a href="./index.html">Instagram</a> | <a href="./index.html">Twitch</a> | <a href="./index.html">TikTok</a></p>
+        <br>
+        <hr>
+        <br>
+        <h1>Trabaja con nosotros</h1>
+        <br>
+        <p>Podes trabajar junto a nosotros clickeando a continuacion para enviarnos tu curriculum, o a travez de <a>LinkedIn</a></p>
+        <br>
+        <a href="./Trabajo.html"><img src="./Imagenes/Captura Empleo.PNG" height="280" width="200"></a>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <p>Federico Jose Breme | 1134915057 | fedebremecasla@outlook.com</p>
+        <br>
+    </footer>
+</body>
+</html>
