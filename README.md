@@ -2,6 +2,8 @@
 
 **Diamond Sky** es un proyecto web estático desarrollado como práctica de **frontend**, con foco en el diseño visual y la estructura general de una página web moderna.
 
+Aca se modelo una pagina de compra de **productos para computradora**, como *perifericos, componentes de hardward, entre otros*
+
 👉 **IMPORTANTE:** este sitio **NO es responsive**. Está diseñado para visualizarse correctamente **solo en pantallas de escritorio (desktop)** y no se adapta a dispositivos móviles o tablets.
 
 ---
@@ -14,14 +16,4 @@ El proyecto presenta una página web con un enfoque estético, utilizando recurs
 - Ejercicio de maquetado y organización de archivos
 
 ---
-
-## 📁 Estructura del proyecto
-
-```text
-Diamond-Sky/
-├─ CSS/            ← Archivos de estilos
-├─ Imagenes/       ← Recursos gráficos e imágenes
-├─ JS/             ← Scripts (si aplica)
-├─ index.html      ← Página principal
-└─ README.md       ← Documentación del proyecto
 
